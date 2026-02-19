@@ -70,10 +70,10 @@
       margin-top: 40px;
     }
 
-    /* Floating Materials */
+    /* Floating Images */
     .materials-container {
       position: relative;
-      height: 150px;
+      height: 180px;
       overflow: hidden;
       margin: 30px 0;
     }
@@ -82,21 +82,57 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 1.3em;
-      font-weight: bold;
-      padding: 10px 20px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 8px;
       white-space: nowrap;
       animation: floatLeft 15s linear infinite;
     }
 
-    .material:nth-child(2) { animation-delay: 5s; }
-    .material:nth-child(3) { animation-delay: 10s; }
+    .material img {
+      width: 120px; /* Adjust size */
+      height: auto;
+      border-radius: 8px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .material img:hover {
+      transform: scale(1.1);
+    }
+
+    /* stagger animation delays for floating effect */
+    .material:nth-child(1) { animation-delay: 0s; }
+    .material:nth-child(2) { animation-delay: 3s; }
+    .material:nth-child(3) { animation-delay: 6s; }
+    .material:nth-child(4) { animation-delay: 9s; }
+    .material:nth-child(5) { animation-delay: 12s; }
+    .material:nth-child(6) { animation-delay: 5s; }
+    .material:nth-child(7) { animation-delay: 8s; }
+    .material:nth-child(8) { animation-delay: 11s; }
+    .material:nth-child(9) { animation-delay: 14s; }
+    .material:nth-child(10) { animation-delay: 7s; }
 
     @keyframes floatLeft {
       0% { left: 100%; }
-      100% { left: -300px; }
+      100% { left: -200px; }
+    }
+
+    /* Static Images Section */
+    .static-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .static-images a img {
+      width: 120px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .static-images a img:hover {
+      transform: scale(1.05);
     }
 
   </style>
@@ -115,13 +151,29 @@
          class="hero-img">
   </a>
 
-  <!-- Floating Materials -->
+  <!-- Floating Images -->
   <div class="materials-container">
-    <div class="material">W.C Set 🚽</div>
-    <div class="material">Jacuzzi 🛁</div>
-    <div class="material">Pipes 🔧</div>
-    <div class="material">Jeepee Tanks 💧</div>
-    <div class="material">Shower 🚿</div>
+    <div class="material"><img src="IMG-20260207-WA0051(1).jpg" alt="Material 1"></div>
+    <div class="material"><img src="IMG-20260207-WA0040.jpg" alt="Material 2"></div>
+    <div class="material"><img src="IMG-20260207-WA0039.jpg" alt="Material 3"></div>
+    <div class="material"><img src="IMG-20260207-WA0041.jpg" alt="Material 4"></div>
+    <div class="material"><img src="IMG-20260207-WA0042.jpg" alt="Material 5"></div>
+    <div class="material"><img src="IMG-20260207-WA0045.jpg" alt="Material 6"></div>
+    <div class="material"><img src="IMG-20260207-WA0048.jpg" alt="Material 7"></div>
+    <div class="material"><img src="IMG-20260207-WA0038.jpg" alt="Material 8"></div>
+    <div class="material"><img src="IMG-20260207-WA0051.jpg" alt="Material 9"></div>
+    <div class="material"><img src="IMG-20260207-WA0053.jpg" alt="Material 10"></div>
+  </div>
+
+  <!-- Static Images clickable to WhatsApp -->
+  <div class="static-images">
+    <a href="https://wa.me/2348131236078" target="_blank">
+      <img src="IMG-20260207-WA0053.jpg" alt="Interested?">
+    </a>
+    <a href="https://wa.me/2348131236078" target="_blank">
+      <img src="IMG-20260207-WA0051.jpg" alt="Interested?">
+    </a>
+    <!-- Add more clickable static images here if desired -->
   </div>
 
   <!-- Contact Buttons -->
