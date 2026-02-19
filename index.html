@@ -6,76 +6,88 @@
   <title>CJ Plumbing Resorts</title>
 
   <style>
+    /* ===== BODY & BACKGROUND ===== */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #000428, #004e92);
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
       text-align: center;
+      background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
       overflow-x: hidden;
     }
 
+    /* ===== HEADER ===== */
     h1 {
-      font-size: 2.5em;
-      margin-top: 40px;
+      font-size: 3em;
+      margin: 50px 20px 10px 20px;
+      color: #00fff7;
+      text-shadow: 2px 2px 10px #000;
     }
 
     p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 10px auto 30px auto;
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 10px auto 40px auto;
+      line-height: 1.5;
+      color: #e0e0e0;
+      text-shadow: 1px 1px 5px #000;
     }
 
-    /* Hero Image */
+    /* ===== HERO IMAGE ===== */
     .hero-img {
       width: 100%;
-      max-width: 350px;
+      max-width: 400px;
       display: block;
       margin: 20px auto;
-      border-radius: 10px;
+      border-radius: 15px;
       cursor: pointer;
-      transition: transform 0.3s;
+      box-shadow: 0 0 25px #00fff7;
+      transition: transform 0.4s, box-shadow 0.4s;
     }
 
     .hero-img:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 40px #00fff7;
     }
 
-    /* Buttons */
+    /* ===== BUTTONS ===== */
     .btn {
       display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
-      border-radius: 10px;
+      margin: 15px;
+      padding: 18px 30px;
+      border-radius: 12px;
       color: white;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1em;
-      transition: transform 0.2s, opacity 0.2s;
+      font-size: 1.2em;
+      box-shadow: 0 0 15px #00fff7;
+      transition: transform 0.2s, opacity 0.2s, box-shadow 0.3s;
     }
 
     .btn:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
+      transform: scale(1.1);
+      opacity: 0.95;
+      box-shadow: 0 0 25px #00fff7;
     }
 
-    .call { background-color: #198754; }
-    .email { background-color: #dc3545; }
+    .call { background-color: #ff4c4c; }
+    .email { background-color: #ff9900; }
     .whatsapp { background-color: #25d366; }
 
     footer {
       background-color: #111;
       color: #aaa;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.9em;
     }
 
-    /* Floating Images */
+    /* ===== FLOATING IMAGES ===== */
     .materials-container {
       position: relative;
-      height: 220px; /* slightly taller for bigger images */
+      height: 250px;
       overflow: hidden;
-      margin: 30px 0;
+      margin: 40px 0;
     }
 
     .material {
@@ -83,23 +95,25 @@
       top: 50%;
       transform: translateY(-50%);
       white-space: nowrap;
-      animation: floatLeft 15s linear infinite;
+      animation: floatLeft 18s linear infinite;
     }
 
     .material img {
-      width: 180px; /* bigger images */
+      width: 180px;
       height: auto;
-      border-radius: 8px;
-      margin: 0 10px;
+      border-radius: 12px;
+      margin: 0 15px;
       cursor: pointer;
-      transition: transform 0.3s;
+      box-shadow: 0 0 20px #00fff7;
+      transition: transform 0.4s, box-shadow 0.4s;
     }
 
     .material img:hover {
-      transform: scale(1.1);
+      transform: scale(1.15);
+      box-shadow: 0 0 35px #00fff7;
     }
 
-    /* stagger animation delays for floating effect */
+    /* stagger animation delays */
     .material:nth-child(1) { animation-delay: 0s; }
     .material:nth-child(2) { animation-delay: 2s; }
     .material:nth-child(3) { animation-delay: 4s; }
@@ -109,32 +123,34 @@
     .material:nth-child(7) { animation-delay: 12s; }
     .material:nth-child(8) { animation-delay: 14s; }
     .material:nth-child(9) { animation-delay: 16s; }
-    .material:nth-child(10) { animation-delay: 18s; }
+    .material:nth-child(10){ animation-delay: 18s; }
 
     @keyframes floatLeft {
       0% { left: 100%; }
       100% { left: -250px; }
     }
 
-    /* Static / lined-up clickable images */
+    /* ===== LINED-UP CLICKABLE IMAGES ===== */
     .static-images {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 30px 0;
-      gap: 15px;
+      margin: 40px 0;
+      gap: 20px;
     }
 
     .static-images a img {
-      width: 180px; /* bigger static images */
+      width: 180px;
       height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
       cursor: pointer;
+      box-shadow: 0 0 15px #00fff7;
     }
 
     .static-images a img:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #00fff7;
     }
 
   </style>
@@ -144,13 +160,12 @@
 
   <h1>CJ Plumbing Resorts</h1>
   <p>Welcome to the official website of CJ plumbing resorts. <br>
-  We deliver professional services with excellence, trust, and powerful results.</p>
+  We deliver professional plumbing services with excellence, trust, and powerful results.</p>
 
-  <!-- Clickable Hero Image -->
+  <!-- Hero Image -->
   <a href="https://wa.me/2348131236078" target="_blank">
     <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/24e81cfff84a7bd9da3f6aaf398a8570d33b488f/1771487985706.png" 
-         alt="CJ Global Image" 
-         class="hero-img">
+         alt="CJ Global Image" class="hero-img">
   </a>
 
   <!-- Floating Images -->
@@ -167,7 +182,7 @@
     <div class="material"><img src="IMG-20260207-WA0053.jpg" alt="Material 10"></div>
   </div>
 
-  <!-- Lined-up clickable images -->
+  <!-- Lined-Up Clickable Images -->
   <div class="static-images">
     <a href="https://wa.me/2348131236078" target="_blank"><img src="IMG-20260207-WA0051(1).jpg" alt="Interested?"></a>
     <a href="https://wa.me/2348131236078" target="_blank"><img src="IMG-20260207-WA0040.jpg" alt="Interested?"></a>
