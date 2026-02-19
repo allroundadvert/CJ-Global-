@@ -12,6 +12,7 @@
       background: linear-gradient(135deg, #000428, #004e92);
       color: white;
       text-align: center;
+      overflow-x: hidden;
     }
 
     h1 {
@@ -37,7 +38,7 @@
     }
 
     .hero-img:hover {
-      transform: scale(1.05); /* small zoom on hover */
+      transform: scale(1.05);
     }
 
     /* Buttons */
@@ -68,6 +69,36 @@
       padding: 15px;
       margin-top: 40px;
     }
+
+    /* Floating Materials */
+    .materials-container {
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+      margin: 30px 0;
+    }
+
+    .material {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      white-space: nowrap;
+      animation: floatLeft 15s linear infinite;
+    }
+
+    .material:nth-child(2) { animation-delay: 5s; }
+    .material:nth-child(3) { animation-delay: 10s; }
+
+    @keyframes floatLeft {
+      0% { left: 100%; }
+      100% { left: -300px; }
+    }
+
   </style>
 </head>
 
@@ -77,18 +108,27 @@
   <p>Welcome to the official website of CJ plumbing resorts. <br>
   We deliver professional services with excellence, trust, and powerful results.</p>
 
-  <!-- Clickable Hero Image (WhatsApp link) -->
-  <a href="https://wa.me/2348037019193" target="_blank">
+  <!-- Clickable Hero Image -->
+  <a href="https://wa.me/2348131236078" target="_blank">
     <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/24e81cfff84a7bd9da3f6aaf398a8570d33b488f/1771487985706.png" 
          alt="CJ Global Image" 
          class="hero-img">
   </a>
 
+  <!-- Floating Materials -->
+  <div class="materials-container">
+    <div class="material">W.C Set 🚽</div>
+    <div class="material">Jacuzzi 🛁</div>
+    <div class="material">Pipes 🔧</div>
+    <div class="material">Jeepee Tanks 💧</div>
+    <div class="material">Shower 🚿</div>
+  </div>
+
   <!-- Contact Buttons -->
   <h2>Contact Us</h2>
-  <a class="btn call" href="tel:08056374089">Call Us</a>
+  <a class="btn call" href="tel:08131236078">Call Us</a>
   <a class="btn email" href="mailto:okorogu3@gmail.com">Email Us</a>
-  <a class="btn whatsapp" href="https://wa.me/2348037019193">WhatsApp</a>
+  <a class="btn whatsapp" href="https://wa.me/2348131236078">WhatsApp</a>
 
   <footer>
     © 2026 CJ Plumbing Resorts. All rights reserved.
