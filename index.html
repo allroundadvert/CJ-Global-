@@ -73,7 +73,7 @@
     /* Floating Images */
     .materials-container {
       position: relative;
-      height: 180px;
+      height: 220px; /* slightly taller for bigger images */
       overflow: hidden;
       margin: 30px 0;
     }
@@ -87,7 +87,7 @@
     }
 
     .material img {
-      width: 120px; /* Adjust size */
+      width: 180px; /* bigger images */
       height: auto;
       border-radius: 8px;
       margin: 0 10px;
@@ -101,34 +101,36 @@
 
     /* stagger animation delays for floating effect */
     .material:nth-child(1) { animation-delay: 0s; }
-    .material:nth-child(2) { animation-delay: 3s; }
-    .material:nth-child(3) { animation-delay: 6s; }
-    .material:nth-child(4) { animation-delay: 9s; }
-    .material:nth-child(5) { animation-delay: 12s; }
-    .material:nth-child(6) { animation-delay: 5s; }
-    .material:nth-child(7) { animation-delay: 8s; }
-    .material:nth-child(8) { animation-delay: 11s; }
-    .material:nth-child(9) { animation-delay: 14s; }
-    .material:nth-child(10) { animation-delay: 7s; }
+    .material:nth-child(2) { animation-delay: 2s; }
+    .material:nth-child(3) { animation-delay: 4s; }
+    .material:nth-child(4) { animation-delay: 6s; }
+    .material:nth-child(5) { animation-delay: 8s; }
+    .material:nth-child(6) { animation-delay: 10s; }
+    .material:nth-child(7) { animation-delay: 12s; }
+    .material:nth-child(8) { animation-delay: 14s; }
+    .material:nth-child(9) { animation-delay: 16s; }
+    .material:nth-child(10) { animation-delay: 18s; }
 
     @keyframes floatLeft {
       0% { left: 100%; }
-      100% { left: -200px; }
+      100% { left: -250px; }
     }
 
-    /* Static Images Section */
+    /* Static / lined-up clickable images */
     .static-images {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin: 30px 0;
+      gap: 15px;
     }
 
     .static-images a img {
-      width: 120px;
-      margin: 10px;
+      width: 180px; /* bigger static images */
+      height: auto;
       border-radius: 8px;
       transition: transform 0.3s;
+      cursor: pointer;
     }
 
     .static-images a img:hover {
@@ -153,38 +155,4 @@
 
   <!-- Floating Images -->
   <div class="materials-container">
-    <div class="material"><img src="IMG-20260207-WA0051(1).jpg" alt="Material 1"></div>
-    <div class="material"><img src="IMG-20260207-WA0040.jpg" alt="Material 2"></div>
-    <div class="material"><img src="IMG-20260207-WA0039.jpg" alt="Material 3"></div>
-    <div class="material"><img src="IMG-20260207-WA0041.jpg" alt="Material 4"></div>
-    <div class="material"><img src="IMG-20260207-WA0042.jpg" alt="Material 5"></div>
-    <div class="material"><img src="IMG-20260207-WA0045.jpg" alt="Material 6"></div>
-    <div class="material"><img src="IMG-20260207-WA0048.jpg" alt="Material 7"></div>
-    <div class="material"><img src="IMG-20260207-WA0038.jpg" alt="Material 8"></div>
-    <div class="material"><img src="IMG-20260207-WA0051.jpg" alt="Material 9"></div>
-    <div class="material"><img src="IMG-20260207-WA0053.jpg" alt="Material 10"></div>
-  </div>
-
-  <!-- Static Images clickable to WhatsApp -->
-  <div class="static-images">
-    <a href="https://wa.me/2348131236078" target="_blank">
-      <img src="IMG-20260207-WA0053.jpg" alt="Interested?">
-    </a>
-    <a href="https://wa.me/2348131236078" target="_blank">
-      <img src="IMG-20260207-WA0051.jpg" alt="Interested?">
-    </a>
-    <!-- Add more clickable static images here if desired -->
-  </div>
-
-  <!-- Contact Buttons -->
-  <h2>Contact Us</h2>
-  <a class="btn call" href="tel:08131236078">Call Us</a>
-  <a class="btn email" href="mailto:okorogu3@gmail.com">Email Us</a>
-  <a class="btn whatsapp" href="https://wa.me/2348131236078">WhatsApp</a>
-
-  <footer>
-    © 2026 CJ Plumbing Resorts. All rights reserved.
-  </footer>
-
-</body>
-</html>
+    <div class="material"><img src="IMG-20260207-WA
