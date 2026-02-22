@@ -12,11 +12,6 @@
   <meta property="og:url" content="https://allroundadvert.github.io/CJ-PLUMBING-RESORTS-/">
   <meta property="og:type" content="website">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CJ Plumbing Resorts">
-  <meta name="twitter:description" content="We deliver professional plumbing services with excellence, trust, and powerful results.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg">
-
   <style>
     body {
       margin: 0;
@@ -37,10 +32,19 @@
     p {
       font-size: 1.3em;
       max-width: 700px;
-      margin: 10px auto 40px auto;
+      margin: 10px auto;
       line-height: 1.5;
       color: #e0e0e0;
       text-shadow: 1px 1px 5px #000;
+    }
+
+    .address {
+      font-size: 1.05em;
+      margin: 15px auto 35px auto;
+      max-width: 850px;
+      color: #ffffff;
+      font-weight: bold;
+      text-shadow: 1px 1px 6px #000;
     }
 
     .hero-img {
@@ -80,6 +84,7 @@
 
     .call { background-color: #ff4c4c; }
     .whatsapp { background-color: #25d366; }
+    .map { background-color: #4285f4; }
 
     footer {
       background-color: #111;
@@ -88,123 +93,49 @@
       margin-top: 50px;
       font-size: 0.9em;
     }
-
-    .materials-container {
-      position: relative;
-      height: 250px;
-      overflow: hidden;
-      margin: 40px 0;
-    }
-
-    .material {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      white-space: nowrap;
-      animation: floatLeft 18s linear infinite;
-    }
-
-    .material img {
-      width: 200px;
-      height: auto;
-      border-radius: 12px;
-      margin: 0 15px;
-      cursor: pointer;
-      box-shadow: 0 0 20px #00fff7;
-      transition: transform 0.4s, box-shadow 0.4s;
-    }
-
-    .material img:hover {
-      transform: scale(1.15);
-      box-shadow: 0 0 35px #00fff7;
-    }
-
-    .material:nth-child(1) { animation-delay: 0s; }
-    .material:nth-child(2) { animation-delay: 2s; }
-    .material:nth-child(3) { animation-delay: 4s; }
-    .material:nth-child(4) { animation-delay: 6s; }
-    .material:nth-child(5) { animation-delay: 8s; }
-    .material:nth-child(6) { animation-delay: 10s; }
-    .material:nth-child(7) { animation-delay: 12s; }
-    .material:nth-child(8) { animation-delay: 14s; }
-    .material:nth-child(9) { animation-delay: 16s; }
-    .material:nth-child(10){ animation-delay: 18s; }
-
-    @keyframes floatLeft {
-      0% { left: 100%; }
-      100% { left: -250px; }
-    }
-
-    .static-images {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 40px 0;
-      gap: 20px;
-    }
-
-    .static-images a img {
-      width: 200px;
-      height: auto;
-      border-radius: 12px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-      box-shadow: 0 0 15px #00fff7;
-    }
-
-    .static-images a img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 30px #00fff7;
-    }
   </style>
 </head>
 
 <body>
 
   <h1>CJ Plumbing Resorts</h1>
-  <p>Welcome to the official website of CJ plumbing resorts.<br>
-  We deliver professional plumbing services with excellence, trust, and powerful results.</p>
+  <p>
+    Welcome to the official website of CJ Plumbing Resorts.<br>
+    We deliver professional plumbing services with excellence, trust, and powerful results.
+  </p>
 
-  <!-- Hero Image (clickable with custom WhatsApp message) -->
+  <!-- ADDRESS -->
+  <div class="address">
+    📍 56 Benin–Auchi Express Way, Opposite College Road Junction,  
+    By CJ Plumbing Resorts Plaza, Benin City, Edo State
+  </div>
+
+  <!-- Hero Image -->
   <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20clicked%20one%20of%20the%20images%20on%20your%20website%20and%20I%E2%80%99m%20interested%20in%20your%20services." target="_blank">
-    <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg" alt="CJ Global Image" class="hero-img">
+    <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg" alt="CJ Plumbing Resorts" class="hero-img">
   </a>
 
-  <!-- Floating Images -->
-  <div class="materials-container">
-    <div class="material"><img src="IMG-20260207-WA0051(1).jpg" alt="Material 1"></div>
-    <div class="material"><img src="IMG-20260207-WA0040.jpg" alt="Material 2"></div>
-    <div class="material"><img src="IMG-20260207-WA0039.jpg" alt="Material 3"></div>
-    <div class="material"><img src="IMG-20260207-WA0041.jpg" alt="Material 4"></div>
-    <div class="material"><img src="IMG-20260207-WA0042.jpg" alt="Material 5"></div>
-    <div class="material"><img src="IMG-20260207-WA0045.jpg" alt="Material 6"></div>
-    <div class="material"><img src="IMG-20260207-WA0048.jpg" alt="Material 7"></div>
-    <div class="material"><img src="IMG-20260207-WA0038.jpg" alt="Material 8"></div>
-    <div class="material"><img src="IMG-20260207-WA0051.jpg" alt="Material 9"></div>
-    <div class="material"><img src="IMG-20260207-WA0053.jpg" alt="Material 10"></div>
-  </div>
-
-  <!-- Static Clickable Images with custom messages -->
-  <div class="static-images">
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20assist%20me." target="_blank"><img src="IMG-20260207-WA0051(1).jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20saw%20your%20website%20and%20I%20am%20interested%20in%20your%20services." target="_blank"><img src="IMG-20260207-WA0040.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20need%20plumbing%20service%20urgently.%20Please%20reply." target="_blank"><img src="IMG-20260207-WA0039.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20assist%20me." target="_blank"><img src="IMG-20260207-WA0041.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20saw%20your%20website%20and%20I%20am%20interested%20in%20your%20services." target="_blank"><img src="IMG-20260207-WA0042.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20need%20plumbing%20service%20urgently.%20Please%20reply." target="_blank"><img src="IMG-20260207-WA0045.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20assist%20me." target="_blank"><img src="IMG-20260207-WA0048.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20saw%20your%20website%20and%20I%20am%20interested%20in%20your%20services." target="_blank"><img src="IMG-20260207-WA0038.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20need%20plumbing%20service%20urgently.%20Please%20reply." target="_blank"><img src="IMG-20260207-WA0051.jpg" alt="Interested?"></a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20clicked%20one%20of%20the%20images%20on%20your%20website%20and%20I%E2%80%99m%20interested%20in%20your%20services." target="_blank"><img src="IMG-20260207-WA0053.jpg" alt="Interested?"></a>
-  </div>
-
-  <!-- Contact Buttons -->
+  <!-- CONTACT -->
   <h2>Contact Us</h2>
-  <a class="btn call" href="tel:08131236078">Call Us</a>
-  <a class="btn whatsapp" href="https://wa.me/2348131236078?text=Hello%2C%20I%20saw%20your%20website%20and%20I%20am%20interested%20in%20your%20services." target="_blank">WhatsApp</a>
+
+  <a class="btn call" href="tel:08131236078">📞 Call Us</a>
+
+  <a class="btn whatsapp" href="https://wa.me/2348131236078?text=Hello%2C%20I%20saw%20your%20website%20and%20I%20am%20interested%20in%20your%20services." target="_blank">
+    💬 WhatsApp
+  </a>
+
+  <!-- GOOGLE MAP BUTTON -->
+  <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=56+Benin+Auchi+Express+Way+Opposite+College+Road+Junction+Benin+City+Edo+State" target="_blank">
+    🗺️ Get Directions
+  </a>
 
   <footer>
-    © 2026 CJ Plumbing Resorts. All rights reserved.
+    © 2026 CJ Plumbing Resorts. All rights reserved.<br>
+    <a href="https://www.google.com/maps/search/?api=1&query=56+Benin+Auchi+Express+Way+Opposite+College+Road+Junction+Benin+City+Edo+State"
+       target="_blank" style="color:#00fff7; text-decoration:none;">
+      📍 56 Benin–Auchi Express Way, Opposite College Road Junction,  
+      By CJ Plumbing Resorts Plaza, Benin City, Edo State
+    </a>
   </footer>
 
 </body>
