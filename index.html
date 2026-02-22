@@ -1,206 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CJ Plumbing Resorts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CJ Plumbing Resorts</title>
 
-  <!-- Social Preview -->
-  <meta property="og:title" content="CJ Plumbing Resorts">
-  <meta property="og:description" content="We deliver professional plumbing services with excellence, trust, and powerful results.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg">
-  <meta property="og:url" content="https://allroundadvert.github.io/CJ-PLUMBING-RESORTS-/">
-  <meta property="og:type" content="website">
+<!-- SEO & Social Preview -->
+<meta property="og:title" content="CJ Plumbing Resorts">
+<meta property="og:description" content="Professional plumbing materials and services you can trust.">
+<meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg">
+<meta property="og:type" content="website">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
-      text-align: center;
-      background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
-      overflow-x: hidden;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 3em;
-      margin: 50px 20px 10px;
-      color: #00fff7;
-      text-shadow: 2px 2px 10px #000;
-    }
+/* Headings */
+h1 {
+  margin-top: 40px;
+  font-size: 2.8em;
+  color: #00fff7;
+  text-shadow: 2px 2px 10px #000;
+}
 
-    p {
-      font-size: 1.3em;
-      max-width: 750px;
-      margin: 10px auto;
-      line-height: 1.5;
-      color: #e0e0e0;
-      text-shadow: 1px 1px 5px #000;
-    }
+p {
+  max-width: 800px;
+  margin: 15px auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
 
-    .address {
-      font-size: 1.05em;
-      margin: 15px auto 35px;
-      max-width: 900px;
-      font-weight: bold;
-      text-shadow: 1px 1px 6px #000;
-    }
+/* Address */
+.address {
+  font-weight: bold;
+  margin: 20px auto 40px;
+  font-size: 1.05em;
+}
 
-    .hero-img {
-      width: 100%;
-      max-width: 420px;
-      margin: 20px auto;
-      border-radius: 15px;
-      box-shadow: 0 0 25px #00fff7;
-      transition: 0.4s;
-    }
+/* Floating images section */
+.materials-container {
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  margin: 40px 0;
+}
 
-    .hero-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 40px #00fff7;
-    }
+.material {
+  position: absolute;
+  animation: float 18s linear infinite;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 15px;
-      padding: 18px 30px;
-      border-radius: 12px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em;
-      box-shadow: 0 0 15px #00fff7;
-      transition: 0.3s;
-    }
+.material img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00fff7;
+}
 
-    .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 30px #00fff7;
-    }
+@keyframes float {
+  from { transform: translateX(-250px); }
+  to { transform: translateX(120vw); }
+}
 
-    .call { background:#ff4c4c; }
-    .whatsapp { background:#25d366; }
-    .map { background:#4285f4; }
+/* STATIC IMAGES — WIDE */
+.static-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .materials-container {
-      position: relative;
-      height: 260px;
-      overflow: hidden;
-      margin: 40px 0;
-    }
+.static-images img {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  border-radius: 18px;
+  box-shadow: 0 0 30px #00fff7;
+  transition: transform 0.3s;
+}
 
-    .material {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      animation: floatLeft 18s linear infinite;
-    }
+.static-images img:hover {
+  transform: scale(1.03);
+}
 
-    .material img {
-      width: 200px;
-      margin: 0 15px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px #00fff7;
-      transition: 0.4s;
-    }
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 16px 30px;
+  margin: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 20px #00fff7;
+}
 
-    .material img:hover {
-      transform: scale(1.15);
-      box-shadow: 0 0 35px #00fff7;
-    }
+.call { background: #ff4c4c; }
+.whatsapp { background: #25d366; }
+.map { background: #4285f4; }
 
-    @keyframes floatLeft {
-      0% { left: 100%; }
-      100% { left: -250px; }
-    }
-
-    .static-images {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 40px 0;
-    }
-
-    .static-images img {
-      width: 200px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00fff7;
-      transition: 0.3s;
-    }
-
-    .static-images img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 30px #00fff7;
-    }
-
-    footer {
-      background:#111;
-      color:#aaa;
-      padding:20px;
-      margin-top:40px;
-      font-size:0.9em;
-    }
-  </style>
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #111;
+  font-size: 0.9em;
+}
+</style>
 </head>
 
 <body>
 
 <h1>CJ Plumbing Resorts</h1>
+
 <p>
-Welcome to the official website of CJ Plumbing Resorts.<br>
-We deliver professional plumbing services with excellence, trust, and powerful results.
+Your trusted destination for quality plumbing materials and professional service.
+We supply durable products for homes, estates, and large projects.
 </p>
 
 <div class="address">
-📍 56 Benin–Auchi Express Way, Opposite College Road Junction,  
-By CJ Plumbing Resorts Plaza, Benin City, Edo State
+📍 Upper Ekewan Barracks Gate, close to Silver Green School,  
+Benin City, Edo State
 </div>
-
-<a href="https://wa.me/2348131236078?text=Hello,%20I%20am%20interested%20in%20your%20services." target="_blank">
-  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg" class="hero-img">
-</a>
 
 <!-- FLOATING IMAGES -->
 <div class="materials-container">
-  <div class="material"><img src="IMG-20260207-WA0051(1).jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0040.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0039.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0041.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0042.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0045.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0048.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0038.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0051.jpg"></div>
-  <div class="material"><img src="IMG-20260207-WA0053.jpg"></div>
+  <div class="material" style="top:20px; animation-delay:0s;">
+    <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg">
+  </div>
+  <div class="material" style="top:120px; animation-delay:6s;">
+    <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0054.jpg">
+  </div>
 </div>
 
-<!-- STATIC IMAGES -->
+<!-- STATIC WIDE IMAGES -->
 <div class="static-images">
-  <img src="IMG-20260207-WA0051(1).jpg">
-  <img src="IMG-20260207-WA0040.jpg">
-  <img src="IMG-20260207-WA0039.jpg">
-  <img src="IMG-20260207-WA0041.jpg">
-  <img src="IMG-20260207-WA0042.jpg">
-  <img src="IMG-20260207-WA0045.jpg">
-  <img src="IMG-20260207-WA0048.jpg">
-  <img src="IMG-20260207-WA0038.jpg">
-  <img src="IMG-20260207-WA0051.jpg">
-  <img src="IMG-20260207-WA0053.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0051.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0052.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0056.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0057.jpg">
 </div>
 
-<h2>Contact Us</h2>
+<!-- CONTACT BUTTONS -->
+<a class="btn call" href="tel:08037019193">📞 Call Now</a>
 
-<a class="btn call" href="tel:08131236078">📞 Call Us</a>
-<a class="btn whatsapp" href="https://wa.me/2348131236078" target="_blank">💬 WhatsApp</a>
-<a class="btn map" href="https://www.google.com/maps/search/?api=1&query=56+Benin+Auchi+Express+Way+Benin+City+Edo+State" target="_blank">
-🗺️ Get Directions
-</a>
+<a class="btn whatsapp"
+href="https://wa.me/2348037019193?text=I%20am%20interested%20in%20your%20product%20I%20saw%20online"
+target="_blank">💬 WhatsApp</a>
+
+<a class="btn map"
+href="https://www.google.com/maps/search/?api=1&query=Upper+Ekewan+Barracks+Gate+Silver+Green+School+Benin+City+Edo+State"
+target="_blank">🗺️ Get Directions</a>
 
 <footer>
-© 2026 CJ Plumbing Resorts. All rights reserved.<br>
-📍 56 Benin–Auchi Express Way, Opposite College Road Junction,  
-By CJ Plumbing Resorts Plaza, Benin City, Edo State
+© 2026 CJ Plumbing Resorts. All Rights Reserved.
 </footer>
 
 </body>
