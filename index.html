@@ -3,163 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CJ Plumbing Resorts</title>
-
-<!-- SEO & Social Preview -->
-<meta property="og:title" content="CJ Plumbing Resorts">
-<meta property="og:description" content="Professional plumbing materials and services you can trust.">
-<meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg">
-<meta property="og:type" content="website">
+<title>Osaro Best Electrical</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  text-align: center;
-}
-
-/* Headings */
-h1 {
-  margin-top: 40px;
-  font-size: 2.8em;
-  color: #00fff7;
-  text-shadow: 2px 2px 10px #000;
-}
-
-p {
-  max-width: 800px;
-  margin: 15px auto;
-  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b0b0b;
+  color: #f1f1f1;
   line-height: 1.6;
 }
 
-/* Address */
-.address {
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a1a1a, #f5b301);
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
   font-weight: bold;
-  margin: 20px auto 40px;
-  font-size: 1.05em;
 }
 
-/* Floating images section */
-.materials-container {
-  height: 260px;
+/* SLIDER (UNCHANGED SIZE) */
+.slider {
+  max-width: 1200px;
+  margin: 30px auto;
   overflow: hidden;
-  position: relative;
-  margin: 40px 0;
-}
-
-.material {
-  position: absolute;
-  animation: float 18s linear infinite;
-}
-
-.material img {
-  width: 200px;
   border-radius: 12px;
-  box-shadow: 0 0 20px #00fff7;
 }
 
-@keyframes float {
-  from { transform: translateX(-250px); }
-  to { transform: translateX(120vw); }
+.slides {
+  display: flex;
+  width: 400%;
+  animation: slide 14s infinite;
+}
+
+.slides a {
+  width: 25%;
+}
+
+.slides img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-25%);}
+  50% {transform: translateX(-50%);}
+  75% {transform: translateX(-75%);}
+  100% {transform: translateX(0);}
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ADDRESS */
+.address {
+  text-align: center;
+  font-weight: bold;
+  margin: 25px 0;
 }
 
 /* STATIC IMAGES — WIDE */
-.static-images {
+.gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 25px;
-  padding: 30px;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.gallery img {
+  width: 100%;
   max-width: 1200px;
   margin: auto;
-}
-
-.static-images img {
-  width: 100%;
-  max-width: 550px;
-  margin: auto;
   border-radius: 18px;
-  box-shadow: 0 0 30px #00fff7;
-  transition: transform 0.3s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
 }
 
-.static-images img:hover {
-  transform: scale(1.03);
+/* BUTTONS */
+.buttons {
+  text-align: center;
+  margin: 50px 0;
 }
 
-/* Buttons */
-.btn {
+.buttons a {
   display: inline-block;
-  padding: 16px 30px;
-  margin: 15px;
-  font-size: 1.1em;
+  margin: 12px;
+  padding: 16px 32px;
+  font-size: 18px;
   font-weight: bold;
-  color: #fff;
-  border-radius: 12px;
+  border-radius: 10px;
   text-decoration: none;
-  box-shadow: 0 0 20px #00fff7;
+  color: #000;
 }
 
-.call { background: #ff4c4c; }
 .whatsapp { background: #25d366; }
-.map { background: #4285f4; }
+.call { background: #f5b301; }
+.facebook { background: #1877f2; color:#fff; }
+.map { background: #4285f4; color:#fff; }
 
 footer {
-  margin-top: 50px;
+  text-align: center;
   padding: 20px;
   background: #111;
-  font-size: 0.9em;
+  margin-top: 40px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>CJ Plumbing Resorts</h1>
+<header>
+<h1>OSARO BEST ELECTRICAL</h1>
+<p>High-Quality Electrical Materials From A to Z</p>
+</header>
 
-<p>
-Your trusted destination for quality plumbing materials and professional service.
-We supply durable products for homes, estates, and large projects.
-</p>
+<div class="container">
 
 <div class="address">
 📍 Upper Ekewan Barracks Gate, close to Silver Green School,  
 Benin City, Edo State
 </div>
 
-<!-- FLOATING IMAGES -->
-<div class="materials-container">
-  <div class="material" style="top:20px; animation-delay:0s;">
-    <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg">
-  </div>
-  <div class="material" style="top:120px; animation-delay:6s;">
-    <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0054.jpg">
+<!-- SLIDER (WORKING IMAGES) -->
+<div class="slider">
+  <div class="slides">
+    <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20product%20I%20saw%20online">
+      <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/2-16.jpg">
+    </a>
+    <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20product%20I%20saw%20online">
+      <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/JBL-Boombox-3-1.jpg">
+    </a>
+    <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20product%20I%20saw%20online">
+      <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/Screenshot_20250826-130552.jpg">
+    </a>
+    <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20product%20I%20saw%20online">
+      <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/Screenshot_20250826-130606.jpg">
+    </a>
   </div>
 </div>
 
 <!-- STATIC WIDE IMAGES -->
-<div class="static-images">
-  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0051.jpg">
-  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0052.jpg">
-  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0056.jpg">
-  <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0057.jpg">
+<div class="gallery">
+  <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/Screenshot_20260219-044337.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/Screenshot_20260219-044705.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/Screenshot_20260219-044804.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/John-White-/main/IMG_20251008_145838_733.jpg">
 </div>
 
-<!-- CONTACT BUTTONS -->
-<a class="btn call" href="tel:08037019193">📞 Call Now</a>
+<!-- BUTTONS -->
+<div class="buttons">
+  <a class="whatsapp" href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20product%20I%20saw%20online">💬 WhatsApp</a>
+  <a class="call" href="tel:08035831839">📞 Call</a>
+  <a class="facebook" href="https://www.facebook.com/share/1AX8dNDpmA/" target="_blank">📘 Facebook</a>
+  <a class="map" href="https://www.google.com/maps/search/?api=1&query=Upper+Ekewan+Barracks+Gate+Silver+Green+School+Benin+City+Edo+State" target="_blank">🗺️ Google Map</a>
+</div>
 
-<a class="btn whatsapp"
-href="https://wa.me/2348037019193?text=I%20am%20interested%20in%20your%20product%20I%20saw%20online"
-target="_blank">💬 WhatsApp</a>
-
-<a class="btn map"
-href="https://www.google.com/maps/search/?api=1&query=Upper+Ekewan+Barracks+Gate+Silver+Green+School+Benin+City+Edo+State"
-target="_blank">🗺️ Get Directions</a>
+</div>
 
 <footer>
-© 2026 CJ Plumbing Resorts. All Rights Reserved.
+© 2026 Osaro Best Electrical — Quality You Can Trust
 </footer>
 
 </body>
