@@ -39,19 +39,20 @@
       text-shadow: 1px 1px 6px #000;
     }
 
-    /* Carousel for moving images */
+    /* Carousel container */
     .carousel-container {
       width: 100%;
       overflow: hidden;
       position: relative;
-      height: 250px;
+      height: 280px;
       margin: 30px 0;
     }
 
     .carousel-track {
       display: flex;
       width: max-content;
-      animation: scrollLeft 12s linear infinite;
+      animation: scrollLeft 10s linear infinite;
+      position: relative;
     }
 
     .carousel-track a img {
@@ -65,8 +66,18 @@
     }
 
     .carousel-track a img:hover {
-      transform: scale(1.15);
-      box-shadow: 0 0 35px #FFD700;
+      transform: scale(1.25);
+      box-shadow: 0 0 45px #FFD700;
+    }
+
+    /* Motivational message below carousel */
+    .motivation {
+      margin: 20px auto 40px auto;
+      font-size: 1.3em;
+      color: #FFD700;
+      font-weight: bold;
+      max-width: 900px;
+      text-shadow: 2px 2px 8px #000;
     }
 
     @keyframes scrollLeft {
@@ -117,8 +128,8 @@
       box-shadow: 0 0 35px #FFD700;
     }
 
-    .call { background-color: #FFD700; color: #0a0a0a; }
-    .whatsapp { background-color: #DAA520; color: #0a0a0a; }
+    .call { background-color: #FFD700; }
+    .whatsapp { background-color: #DAA520; }
 
     footer {
       background-color: #111;
@@ -139,6 +150,10 @@
       .static-images a img {
         width: 160px;
       }
+
+      .motivation {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
@@ -146,9 +161,7 @@
 <body>
 
   <h1>CJ Plumbing Resorts</h1>
-  <p>
-    We deliver professional plumbing services with excellence, trust, and powerful results.
-  </p>
+  <p>We deliver professional plumbing services with excellence, trust, and powerful results.</p>
 
   <div class="address">
     📍 56 Benin–Auchi Express Way, Opposite College Road Junction,  
@@ -164,7 +177,7 @@
       <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20plumbing%20services.%20Please%20assist%20me." target="_blank">
         <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0051.jpg" alt="Moving Image 2">
       </a>
-      <!-- duplicate for seamless loop -->
+      <!-- duplicate for smooth looping -->
       <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20plumbing%20services.%20Please%20assist%20me." target="_blank">
         <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0053.jpg" alt="Moving Image 1">
       </a>
@@ -174,30 +187,35 @@
     </div>
   </div>
 
+  <!-- Motivational message under carousel -->
+  <div class="motivation">
+    💧 Upgrade Your Home Today! Quality Plumbing Materials You Can Trust — Click Any Product and Contact Us Now! 💧
+  </div>
+
   <!-- Static images -->
   <div class="static-images">
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20plumbing%20services.%20Please%20assist%20me." target="_blank">
+    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20services." target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0040.jpg" alt="Material 1">
     </a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20plumbing%20services.%20Please%20assist%20me." target="_blank">
+    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20services." target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0039.jpg" alt="Material 2">
     </a>
-    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20plumbing%20services.%20Please%20assist%20me." target="_blank">
+    <a href="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0041.jpg" target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0041.jpg" alt="Material 3">
     </a>
-    <a href="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0042.jpg" alt="Material 4">
+    <a href="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0042.jpg" target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0042.jpg" alt="Material 4">
     </a>
-    <a href="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0045.jpg" alt="Material 5">
+    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20services." target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0045.jpg" alt="Material 5">
     </a>
-    <a href="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0048.jpg" alt="Material 6">
+    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%your%20services." target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0048.jpg" alt="Material 6">
     </a>
-    <a href="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0038.jpg" alt="Material 7">
+    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%your%20services." target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0038.jpg" alt="Material 7">
     </a>
-    <a href="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0051(1).jpg" alt="Material 8">
+    <a href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%your%20services." target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/CJ-Global-/main/IMG-20260207-WA0051(1).jpg" alt="Material 8">
     </a>
   </div>
@@ -205,7 +223,7 @@
   <!-- Contact Buttons -->
   <div style="margin: 30px 0;">
     <a class="btn call" href="tel:08131236078">📞 Call Us</a>
-    <a class="btn whatsapp" href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%20your%20plumbing%20services.%20Please%20assist%20me." target="_blank">💬 WhatsApp</a>
+    <a class="btn whatsapp" href="https://wa.me/2348131236078?text=Hello%2C%20I%20am%20interested%20in%your%20services." target="_blank">💬 WhatsApp</a>
   </div>
 
   <footer>
